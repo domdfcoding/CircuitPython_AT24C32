@@ -8,7 +8,7 @@ version = "0.0.0"
 description = "CircuitPython library to support AT24C39 EEPROM ICs."
 readme = "README.rst"
 keywords = [ "circuitpython", "eeprom",]
-dynamic = [ "classifiers", "dependencies",]
+dynamic = [ "requires-python", "classifiers", "dependencies",]
 requires-python = ">=3.4.0"
 
 [[project.authors]]
@@ -38,8 +38,9 @@ base-classifiers = [
     "Intended Audience :: Developers",
     "Programming Language :: Python",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
 ]
-python-versions = [ "3.6", "3.7", "3.8", "3.9", "3.10",]
+python-versions = [ "3.10", "3.6", "3.7", "3.8", "3.9",]
 python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
