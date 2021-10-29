@@ -1,0 +1,69 @@
+[build-system]
+requires = [ "whey",]
+build-backend = "whey"
+
+[project]
+name = "CircuitPython_AT24C32"
+version = "0.0.0"
+description = "CircuitPython library to support AT24C39 EEPROM ICs."
+readme = "README.rst"
+keywords = [ "circuitpython", "eeprom",]
+dynamic = [ "requires-python", "classifiers", "dependencies",]
+
+[[project.authors]]
+name = "Dominic Davis-Foster"
+email = "dominic@davis-foster.co.uk"
+
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/domdfcoding/CircuitPython_AT24C32"
+"Issue Tracker" = "https://github.com/domdfcoding/CircuitPython_AT24C32/issues"
+"Source Code" = "https://github.com/domdfcoding/CircuitPython_AT24C32"
+
+[tool.mypy]
+python_version = "3.4"
+namespace_packages = true
+check_untyped_defs = true
+warn_unused_ignores = true
+no_implicit_optional = true
+show_error_codes = true
+
+[tool.whey]
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+python-versions = [ "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10",]
+python-implementations = [ "CPython",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"
+package = "circuitpython_at24c32"
+
+[tool.importcheck]
+
+[tool.snippet-fmt]
+directives = [ "code-block",]
+
+[tool.dep_checker]
+allowed_unused = [ "adafruit_blinka",]
+
+[tool.dep_checker.name_mapping]
+adafruit_circuitpython_busdevice = "adafruit_bus_device"
+
+[tool.dependency-dash."requirements.txt"]
+order = 10
+
+[tool.snippet-fmt.languages.python]
+reformat = true
+
+[tool.snippet-fmt.languages.TOML]
+reformat = true
+
+[tool.snippet-fmt.languages.ini]
+
+[tool.snippet-fmt.languages.json]

@@ -1,0 +1,40 @@
+# Configuration for 'repo_helper' (https://github.com/repo-helper/repo_helper)
+---
+modname: 'CircuitPython_AT24C32'
+import_name: "circuitpython_at24c32"
+copyright_years: '2021'
+author: 'Dominic Davis-Foster'
+email: 'dominic@davis-foster.co.uk'
+username: 'domdfcoding'
+version: '0.0.0'
+license: 'MIT'
+short_desc: 'CircuitPython library to support AT24C39 EEPROM ICs.'
+
+enable_conda: false
+enable_tests: false
+enable_docs: false
+on_pypi: false
+use_whey: true
+
+exclude_files:
+  - pre-commit
+
+  # Versions to run tests for
+python_versions:
+ - '3.4'
+ - '3.5'
+ - '3.6'
+ - '3.7'
+ - '3.8'
+ - '3.9'
+ - '3.10'
+
+classifiers:
+ - 'Development Status :: 4 - Beta'
+ - 'Intended Audience :: Developers'
+ - 'Programming Language :: Python'
+ - 'Topic :: Software Development :: Libraries :: Python Modules'
+
+keywords:
+ - circuitpython
+ - eeprom
