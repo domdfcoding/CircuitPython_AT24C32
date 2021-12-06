@@ -9,7 +9,7 @@ description = "CircuitPython library to support AT24C39 EEPROM ICs."
 readme = "README.rst"
 requires-python = ">=3.4.0"
 keywords = [ "circuitpython", "eeprom",]
-dynamic = [ "requires-python", "classifiers", "dependencies",]
+dynamic = [ "classifiers", "dependencies",]
 
 [[project.authors]]
 name = "Dominic Davis-Foster"
@@ -40,7 +40,7 @@ base-classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Typing :: Typed",
 ]
-python-versions = [ "3.10", "3.6", "3.7", "3.8", "3.9",]
+python-versions = [ "3.6", "3.7", "3.8", "3.9", "3.10",]
 python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
