@@ -31,7 +31,7 @@ lines_between_types = 0
 use_parentheses = true
 remove_redundant_aliases = true
 default_section = "THIRDPARTY"
-known_third_party = [ "adafruit_blinka", "adafruit_circuitpython_bus_device",]
+known_third_party = [ "adafruit_blinka", "adafruit_circuitpython_bus_device", "adafruit_circuitpython_busdevice",]
 known_first_party = "circuitpython_at24c32"
 extra_standard_library = [
     "usb_hid",
