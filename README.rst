@@ -44,8 +44,8 @@ CircuitPython_AT24C32
 	:target: https://github.com/domdfcoding/CircuitPython_AT24C32/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/CircuitPython_AT24C32/badge.svg
-	:target: https://dependency-dash.herokuapp.com/github/domdfcoding/CircuitPython_AT24C32/
+.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/CircuitPython_AT24C32/badge.svg
+	:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/CircuitPython_AT24C32/
 	:alt: Requirements Status
 
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/CircuitPython_AT24C32?logo=codefactor
