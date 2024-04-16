@@ -15,7 +15,6 @@ dynamic = [ "classifiers", "dependencies",]
 name = "Dominic Davis-Foster"
 email = "dominic@davis-foster.co.uk"
 
-
 [project.license]
 file = "LICENSE"
 
@@ -51,15 +50,6 @@ package = "circuitpython_at24c32"
 [tool.snippet-fmt]
 directives = [ "code-block",]
 
-[tool.dep_checker]
-allowed_unused = [ "adafruit_blinka",]
-
-[tool.dep_checker.name_mapping]
-adafruit_circuitpython_busdevice = "adafruit_bus_device"
-
-[tool.dependency-dash."requirements.txt"]
-order = 10
-
 [tool.snippet-fmt.languages.python]
 reformat = true
 
@@ -69,3 +59,12 @@ reformat = true
 [tool.snippet-fmt.languages.ini]
 
 [tool.snippet-fmt.languages.json]
+
+[tool.dep_checker]
+allowed_unused = [ "adafruit_blinka",]
+
+[tool.dep_checker.name_mapping]
+adafruit_circuitpython_busdevice = "adafruit_bus_device"
+
+[tool.dependency-dash."requirements.txt"]
+order = 10
