@@ -11,13 +11,12 @@ requires-python = ">=3.4.0"
 keywords = [ "circuitpython", "eeprom",]
 dynamic = [ "classifiers", "dependencies",]
 
+[project.license]
+file = "LICENSE"
+
 [[project.authors]]
 name = "Dominic Davis-Foster"
 email = "dominic@davis-foster.co.uk"
-
-
-[project.license]
-file = "LICENSE"
 
 [project.urls]
 Homepage = "https://github.com/domdfcoding/CircuitPython_AT24C32"
@@ -25,7 +24,7 @@ Homepage = "https://github.com/domdfcoding/CircuitPython_AT24C32"
 "Source Code" = "https://github.com/domdfcoding/CircuitPython_AT24C32"
 
 [tool.mypy]
-python_version = "3.6"
+python_version = "3.8"
 namespace_packages = true
 check_untyped_defs = true
 warn_unused_ignores = true
@@ -51,15 +50,6 @@ package = "circuitpython_at24c32"
 [tool.snippet-fmt]
 directives = [ "code-block",]
 
-[tool.dep_checker]
-allowed_unused = [ "adafruit_blinka",]
-
-[tool.dep_checker.name_mapping]
-adafruit_circuitpython_busdevice = "adafruit_bus_device"
-
-[tool.dependency-dash."requirements.txt"]
-order = 10
-
 [tool.snippet-fmt.languages.python]
 reformat = true
 
@@ -69,3 +59,12 @@ reformat = true
 [tool.snippet-fmt.languages.ini]
 
 [tool.snippet-fmt.languages.json]
+
+[tool.dep_checker]
+allowed_unused = [ "adafruit_blinka",]
+
+[tool.dep_checker.name_mapping]
+adafruit_circuitpython_busdevice = "adafruit_bus_device"
+
+[tool.dependency-dash."requirements.txt"]
+order = 10
