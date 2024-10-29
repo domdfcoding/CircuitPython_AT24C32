@@ -17,10 +17,7 @@ on_pypi: false
 use_whey: true
 requires_python: "3.4.0"
 
-exclude_files:
-  - pre-commit
-
-  # Versions to run tests for
+# Versions to run tests for
 python_versions:
  - '3.6'
  - '3.7'
