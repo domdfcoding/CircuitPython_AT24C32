@@ -43,7 +43,7 @@ Implementation Notes
 import time
 
 # 3rd party
-from adafruit_bus_device.i2c_device import I2CDevice  # type: ignore[import]
+from adafruit_bus_device.i2c_device import I2CDevice  # type: ignore[import-untyped]
 
 __author__ = "Dominic Davis-Foster"
 __copyright__ = "2021 Dominic Davis-Foster"
@@ -56,7 +56,8 @@ __all__ = ["AT24C32"]
 
 
 class AT24C32:
-	"""Interface to the AT24C32 EEPROM IC.
+	"""
+	Interface to the AT24C32 EEPROM IC.
 
 	**Quickstart: Importing and using the device**
 
@@ -77,8 +78,9 @@ class AT24C32:
 
 		.. TODO:: Read and write data
 
-	:param ~busio.I2C i2c: The I2C bus the device is connected to
-
+	:param i2c: The I2C bus the device is connected to
+	:type i2c: :class:`~busio.I2C`
+	:param address:
 	"""
 
 	def __init__(self, i2c: I2CDevice, address: int = 0x50):
@@ -88,7 +90,7 @@ class AT24C32:
 			self,
 			val: "int | bytes | bytearray",
 			start_addr: int,
-			):
+			) -> None:
 		"""
 		Write ``val`` to the EEPROM, starting from ``start_addr``.
 
@@ -111,7 +113,7 @@ class AT24C32:
 								((start_addr + offset) & 0b1111111100000000) >> 8,
 								((start_addr + offset) & 0b11111111),
 								byte,
-								])
+								]),
 						)
 				time.sleep(0.1)
 
@@ -131,7 +133,7 @@ class AT24C32:
 						bytearray([
 								(start_addr + offset & 0b1111111100000000) >> 8,
 								(start_addr + offset & 0b11111111),
-								])
+								]),
 						)
 				time.sleep(0.1)
 				self.i2c_device.readinto(buf, start=offset)
