@@ -19,7 +19,6 @@ requires_python: "3.4.0"
 
 # Versions to run tests for
 python_versions:
- - '3.6'
  - '3.7'
  - '3.8'
  - '3.9'
