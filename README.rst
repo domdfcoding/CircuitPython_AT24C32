@@ -67,7 +67,7 @@ CircuitPython_AT24C32
 	:target: https://github.com/domdfcoding/CircuitPython_AT24C32/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2025
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2026
 	:alt: Maintenance
 
 .. end shields
