@@ -66,7 +66,10 @@ class AT24C32:
 
 		.. code-block:: python
 
+			# stdlib
 			import board
+
+			# 3rd party
 			import at24c32
 
 		Once this is done you can define your `board.I2C` object and create an `AT24C32` instance:
